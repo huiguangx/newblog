@@ -351,9 +351,18 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="前端自动化部署"><a href="#前端自动化部署" class="headerlink" title="前端自动化部署"></a>前端自动化部署</h1><blockquote>
-<p>这里介绍github+Netlify来部署hexo博客</p>
+<p>这里介绍github+Netlify来部署hexo博客，本人的博客渲染框架是使用Hexo，页面托管用的是Netlify</p>
 </blockquote>
-<h2 id="1-部署"><a href="#1-部署" class="headerlink" title="1.部署"></a>1.部署</h2><h3 id="1-1项目同步到Github"><a href="#1-1项目同步到Github" class="headerlink" title="1.1项目同步到Github"></a>1.1项目同步到Github</h3><h4 id="1-1-1-在Github上新建一个repository"><a href="#1-1-1-在Github上新建一个repository" class="headerlink" title="1.1.1 在Github上新建一个repository"></a>1.1.1 在Github上新建一个repository</h4><p><img src="/../images/image-20220923105818343.png" alt="image-20220923105818343"></p>
+<h2 id="1-一些知识点"><a href="#1-一些知识点" class="headerlink" title="1.一些知识点"></a>1.一些知识点</h2><p><strong>Netlify</strong></p>
+<ul>
+<li>可以托管静态资源</li>
+<li>可以将静态网站部署到CDN上</li>
+<li>Continuous Deployment 持续部署,当你提交改变到git 仓库,它就会自动运行build command,进行自动部署</li>
+<li>可以添加自定义域名</li>
+<li><strong>可以启用免费的TLS证书,启用HTTPS</strong></li>
+</ul>
+<h2 id="2-部署"><a href="#2-部署" class="headerlink" title="2.部署"></a>2.部署</h2><p>部署的原理图<img src="/../images/image-20220923171959224.png" alt="image-20220923171959224"></p>
+<h3 id="1-1项目同步到Github"><a href="#1-1项目同步到Github" class="headerlink" title="1.1项目同步到Github"></a>1.1项目同步到Github</h3><h4 id="1-1-1-在Github上新建一个repository"><a href="#1-1-1-在Github上新建一个repository" class="headerlink" title="1.1.1 在Github上新建一个repository"></a>1.1.1 在Github上新建一个repository</h4><p><img src="/../images/image-20220923105818343.png" alt="image-20220923105818343"></p>
 <p>复制你刚刚新建的repository的地址</p>
 <pre class="line-numbers language-csharp" data-language="csharp"><code class="language-csharp">git@github<span class="token punctuation">.</span>com<span class="token punctuation">:</span>Emptyverse<span class="token operator">/</span>newblog<span class="token punctuation">.</span>git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
